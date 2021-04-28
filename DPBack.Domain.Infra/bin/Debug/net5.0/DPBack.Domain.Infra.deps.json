@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DPBack.Domain.Infra/1.0.0": {
+        "dependencies": {
+          "DPBack.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DPBack.Domain.Infra.dll": {}
+        }
+      },
+      "DPBack.Domain/1.0.0": {
+        "runtime": {
+          "DPBack.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DPBack.Domain.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DPBack.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

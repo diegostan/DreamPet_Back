@@ -1,0 +1,15 @@
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\bin\Debug\net5.0\DPBack.Domain.Infra.deps.json
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\bin\Debug\net5.0\DPBack.Domain.Infra.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\bin\Debug\net5.0\ref\DPBack.Domain.Infra.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\bin\Debug\net5.0\DPBack.Domain.Infra.pdb
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.csprojAssemblyReference.cache
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.AssemblyInfoInputs.cache
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.AssemblyInfo.cs
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.csproj.CoreCompileInputs.cache
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\ref\DPBack.Domain.Infra.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.pdb
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\bin\Debug\net5.0\DPBack.Domain.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\bin\Debug\net5.0\DPBack.Domain.pdb
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Infra\obj\Debug\net5.0\DPBack.Domain.Infra.csproj.CopyComplete

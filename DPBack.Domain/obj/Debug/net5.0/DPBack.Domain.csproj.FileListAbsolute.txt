@@ -1,0 +1,12 @@
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\bin\Debug\net5.0\DPBack.Domain.deps.json
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\bin\Debug\net5.0\DPBack.Domain.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\bin\Debug\net5.0\ref\DPBack.Domain.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\bin\Debug\net5.0\DPBack.Domain.pdb
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.csprojAssemblyReference.cache
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.AssemblyInfoInputs.cache
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.AssemblyInfo.cs
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.csproj.CoreCompileInputs.cache
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\ref\DPBack.Domain.dll
+C:\VSCode\dreampet\back\DPBack\DPBack.Domain\obj\Debug\net5.0\DPBack.Domain.pdb
