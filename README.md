@@ -27,6 +27,8 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 * Integração de sistema de autorização
 * Integração de sistema de autenticação
+* Integrar os Handler no Dominio 
+* Implementar o Repository Patterns
 
 ## Tecnologias back end
 
@@ -43,4 +45,4 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 * Xamarin para Mobile
 * Quem sabe o MAUI chegue para criarmos algo para Desk ? ❤️
-* Pretendo utilizar Angular para WEB
+* Pretendo utilizar Angular para WEB(estou aprendendo ainda...)
