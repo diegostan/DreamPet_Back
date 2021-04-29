@@ -1,7 +1,7 @@
 # DreamPet_Back 
 ### Todo código backend da aplicação
 
-## DreamPet 💜
+## 💜 DreamPet 💜
 
 * O DreamPet surgiu da ideia de gerenciar melhor o histórico de animais como controle de vacinação, alimentação, exercícios entre outras.
 * A ideia é que donos em geral cadastrem seus pets no sistema e tenham um histórico total da vida do seu animal.
@@ -29,11 +29,12 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 * ASP.NET MVC 
 * Autenticação e autorização via redes sociais com Firebase(futuro)
 
-## Atualizações
+## Modelagem e estrutura
 
-* A modelagem do back é com DDD e TDD
+* A modelagem do back é com DDD e TDD 
 * A aplicação terá domínio rico, o DB só serivrá de repos
 * Criou uma entidade ? Crie um teste para ela!
+* Testes testes e mais testes. Vai que a aplicação cresce a nível global 🤣💜
 
 ## Atualizações
 
