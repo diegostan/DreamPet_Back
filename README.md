@@ -4,6 +4,12 @@
 ## DreamPet 💜
 
 * O DreamPet surgiu da ideia de gerenciar melhor o histórico de animais como controle de vacinação, alimentação, exercícios entre outras.
+* A ideia é que donos em geral cadastrem seus pets no sistema e tenham um histórico total da vida do seu animal.
+* Também idealizo a ideia de criar um forum para as pessoas se comunicarem e trocar experiências.
+* Um dono pode ter diversos animais cadastrados e suas respectivas linha do tempo.
+* Uma empresa poderá cadastrar seus animais usando o cadastro com CNPJ.
+* Não existe qualquer intuito de monetizar esse sistema, ele sempre será OpenSource, sem anuncios, sem pagamentos.
+* Caso a escalabilidade horizontal se torne insustentável do ponto de vista financeiro, iremos procurar algum patrocinio APENAS para infra.
 
 ## Open Source
 
