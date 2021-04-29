@@ -15,20 +15,22 @@ namespace DPBack.Domain
 
         public bool NameValidation(Name name)
         {
-            if (string.IsNullOrEmpty(name.FirstName)){
-             Notifications.Add(new Notification {PropertyName="Name.FirstName", 
-             MessageError = "O nome não pode estar vazio"});
+            if(NameValidations.FirstNameIsNotNull(name)){
+             AddNotifications("Name.FirstName", "O nome não pode estar vazio");             
             return false;
             }
 
-            if (string.IsNullOrEmpty(name.LastName)){
-             Notifications.Add(new Notification {PropertyName="Name.LastName", 
-             MessageError = "O sobrenome não pode estar vazio"});
+           if(NameValidations.LastNameIsNotNull(name)){
+             AddNotifications("Name.LastName",  "O nome não pode estar vazio");
             return false;
             }
+
+            
             
             return true;
         }
+
+      
         
     }
 }

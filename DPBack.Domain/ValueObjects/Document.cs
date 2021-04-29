@@ -18,15 +18,13 @@ namespace DPBack.Domain
         {
             if (document.DocumentType==EDocumentType.CPF)
             {
-                Notifications.Add(new Notification {PropertyName="Document.DocumentNumber", 
-                MessageError = "O CPF é inválido"});
+                AddNotifications("Document.DocumentNumber", "O CPF é inválido");                
                 return DocumentsValidations.IsCpf(document.DocumentNumber);
             }
 
              if (document.DocumentType==EDocumentType.CNPJ)
             {
-                Notifications.Add(new Notification {PropertyName="Document.DocumentNumber", 
-                MessageError = "O CNPJ é inválido"});
+                AddNotifications("Document.DocumentNumber", "O CNPJ é inválido");                
                 return DocumentsValidations.IsCnpj(document.DocumentNumber);
             }
 
