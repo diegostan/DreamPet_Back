@@ -31,6 +31,12 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 ## Atualizações
 
+* A modelagem do back é com DDD e TDD
+* A aplicação terá domínio rico, o DB só serivrá de repos
+* Criou uma entidade ? Crie um teste para ela!
+
+## Atualizações
+
 * Integração de sistema de autorização
 * Integração de sistema de autenticação
 * Integrar os Handler no Dominio 
