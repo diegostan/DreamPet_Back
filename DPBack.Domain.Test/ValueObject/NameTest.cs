@@ -6,13 +6,12 @@ namespace DPBack.Domain
     [TestClass]
     public class NameTest
     {
-        [TestMethod]
-        
+        [TestMethod]        
         public void VerificaNome()
         {
-            var name = new Name("Diego", "M");
-            Assert.IsTrue(name.NameValidation(name));
-            
-        }
+            var name = new Name("Diego", "Magalhaes");
+            Assert.IsTrue(name.NameValidation(name));            
+        }       
+       
     }
 }
