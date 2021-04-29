@@ -14,7 +14,7 @@
 * O projeto está dividido em camadas para facilitar a escalabilidade e manutenção
 * A parte de testes unitarios já está implementada
 * As entidades e os modelos de domínio estão desacoplados do Repositorio
-* Repository Patterns, S.O.L.I.D
+* Repository Patterns, S.O.L.I.D e DDD
 
 ## Sobre a API
 
