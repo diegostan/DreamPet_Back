@@ -1,6 +1,6 @@
 namespace DPBack.Domain
 {
-    public enum PetSize
+    public enum EPetSize
     {
         Big, Average, Small
     }

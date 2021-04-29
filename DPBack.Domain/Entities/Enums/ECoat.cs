@@ -1,6 +1,6 @@
 namespace DPBack.Domain
 {
-    public enum Coat
+    public enum ECoat
     {
         Short, Average, Long
     }

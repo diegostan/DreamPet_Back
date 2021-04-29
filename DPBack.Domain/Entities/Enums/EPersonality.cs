@@ -1,6 +1,6 @@
 namespace DPBack.Domain
 {
-    public enum Personality
+    public enum EPersonality
     {
         Docile, Calm, Hectic, Angry
     }
