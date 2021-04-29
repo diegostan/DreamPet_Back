@@ -1,3 +1,6 @@
+using DPBack.Domain.Entities;
+using DPBack.Domain.ValueObjects;
+
 namespace DPBack.Domain
 {
     public static class NameValidations

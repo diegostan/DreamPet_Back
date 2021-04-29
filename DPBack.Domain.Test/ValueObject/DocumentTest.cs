@@ -1,5 +1,7 @@
 
+using DPBack.Domain.Entities.Enums;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Document = DPBack.Domain.ValueObjects.Document;
 
 namespace DPBack.Domain
 {

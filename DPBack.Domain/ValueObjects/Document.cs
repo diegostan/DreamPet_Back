@@ -1,7 +1,9 @@
 using System;
 using System.Text.RegularExpressions;
+using DPBack.Domain.Entities;
+using DPBack.Domain.Entities.Enums;
 
-namespace DPBack.Domain
+namespace DPBack.Domain.ValueObjects
 {
     public class Document:BaseEntity
     {
@@ -14,21 +16,6 @@ namespace DPBack.Domain
         public string DocumentNumber{get; private set;}
         public EDocumentType DocumentType {get;private set;}
 
-        public bool DocumentValidation(Document document)
-        {
-            if (document.DocumentType==EDocumentType.CPF)
-            {
-                AddNotifications("Document.DocumentNumber", "O CPF é inválido");                
-                return DocumentsValidations.IsCpf(document.DocumentNumber);
-            }
-
-             if (document.DocumentType==EDocumentType.CNPJ)
-            {
-                AddNotifications("Document.DocumentNumber", "O CNPJ é inválido");                
-                return DocumentsValidations.IsCnpj(document.DocumentNumber);
-            }
-
-            return true;
-        }
+       
     }
 }

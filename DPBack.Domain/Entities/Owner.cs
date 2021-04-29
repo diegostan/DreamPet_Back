@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
+using DPBack.Domain.ValueObjects;
+using Document = DPBack.Domain.ValueObjects.Document;
 
-namespace DPBack.Domain
+namespace DPBack.Domain.Entities
 {
     public class Owner:BaseEntity
     {

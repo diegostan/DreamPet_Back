@@ -1,7 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using DPBack.Domain.Entities.Enums;
+using DPBack.Domain.ValueObjects;
 
-namespace DPBack.Domain
+namespace DPBack.Domain.Entities
 {
     public abstract class BasePet: BaseEntity
     {      
@@ -12,7 +14,7 @@ namespace DPBack.Domain
             Owner = owner;            
             Size = size;            
         }
-        
+
         public Name Name {get;private set;}
         public string IdentityNumber {get;private set;}
         public Owner Owner {get; private set;}

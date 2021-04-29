@@ -1,6 +1,6 @@
 using System;
 
-namespace DPBack.Domain
+namespace DPBack.Domain.Entities
 {
     public class Breed
     {

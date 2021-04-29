@@ -1,4 +1,4 @@
-namespace DPBack.Domain
+namespace DPBack.Domain.Entities.Enums
 {
     public enum EPetSize
     {

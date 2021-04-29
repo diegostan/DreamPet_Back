@@ -1,6 +1,7 @@
 using System;
+using DPBack.Domain.Entities;
 
-namespace DPBack.Domain
+namespace DPBack.Domain.ValueObjects
 {
     public class Name:BaseEntity
     {

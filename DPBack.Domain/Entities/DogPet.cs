@@ -1,4 +1,7 @@
-namespace DPBack.Domain
+using DPBack.Domain.Entities.Enums;
+using DPBack.Domain.ValueObjects;
+
+namespace DPBack.Domain.Entities
 {
     public class DogPet:BasePet
     {
