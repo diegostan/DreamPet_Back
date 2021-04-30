@@ -4,9 +4,12 @@ using System.Reflection.Metadata;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.ValueObjects;
 using Document = DPBack.Domain.ValueObjects.Document;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DPBack.Domain.Entities
 {
+    [Table("Owners")]
     public class Owner:BaseEntity
     {
         List<BasePet> _listPets;
