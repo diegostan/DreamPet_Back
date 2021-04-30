@@ -1,9 +1,10 @@
 using System;
 using DPBack.Domain.Entities;
+using DPBack.Domain.Entities.Context;
 
 namespace DPBack.Domain.ValueObjects
 {
-    public class Name:BaseEntity
+    public sealed class Name:BaseEntity
     {
         public Name(string firstName, string lastName)
         {

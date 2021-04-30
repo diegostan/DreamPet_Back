@@ -1,6 +1,6 @@
 using DPBack.Domain.Commands.Interfaces;
 
-namespace DPBack.Domain.Handlers
+namespace DPBack.Domain.Handlers.Interfaces
 {
     /*Nunca alterar o tipo passado para a interface! 
     Resultado => code break*/

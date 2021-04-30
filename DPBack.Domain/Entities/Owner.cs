@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
+using DPBack.Domain.Entities.Context;
 using DPBack.Domain.ValueObjects;
 using Document = DPBack.Domain.ValueObjects.Document;
 
@@ -15,6 +16,7 @@ namespace DPBack.Domain.Entities
         public Document Document {get;private set;}
         public DateTime CreateDate{get; private set;}
         public IReadOnlyCollection<BasePet> Pets {get; internal set;}
+        
         
         //Single entry point
         public Owner(Name name, string address, string fone, Document document)        

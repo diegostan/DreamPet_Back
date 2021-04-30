@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 
-namespace DPBack.Domain.Entities
+namespace DPBack.Domain.Entities.Context
 {
     public abstract class BasePet: BaseEntity
     {      
@@ -15,12 +15,11 @@ namespace DPBack.Domain.Entities
             Size = size;            
         }
 
-        public Name Name {get;private set;}
-        public string IdentityNumber {get;private set;}
-        public Owner Owner {get; private set;}
-        public Guid OwnerGuid {get;private set;}
+        public Name Name {get;private set;}        
+        public Owner Owner {get; private set;}        
         public EPetSize Size {get; private set;}        
-
+        public string IdentityNumber {get;private set;}
+        public double Age{get;set;}
         public void SetName(Name name)
         {            
             Name = name;

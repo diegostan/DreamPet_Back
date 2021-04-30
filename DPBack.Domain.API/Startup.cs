@@ -28,6 +28,7 @@ namespace DPBack.Domain.API
         {
 
             services.AddControllers();
+            services.AddMvc();                        
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DPBack.Domain.API", Version = "v1" });

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DPBack.Domain.Entities
+namespace DPBack.Domain.Entities.Context
 {
     public abstract class BaseEntity : IEquatable<BaseEntity>
     {

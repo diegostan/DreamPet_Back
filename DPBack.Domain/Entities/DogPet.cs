@@ -1,3 +1,4 @@
+using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 
@@ -5,7 +6,7 @@ namespace DPBack.Domain.Entities
 {
     public class DogPet:BasePet
     {
-        public Breed BreedId {get; private set;}
+        public Breed Breed {get; private set;}
         public ECoat Coat {get; private set;}
         public EPersonality Personality {get; private set;}
      
