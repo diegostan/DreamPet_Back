@@ -40,8 +40,8 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 * Integração de sistema de autorização
 * Integração de sistema de autenticação
-* Integrar os Handler no Dominio 
-* Implementar o Repository Patterns
+* Integrar os Handler no Dominio (OK)
+* Implementar o Repository Patterns (OK)
 
 ## Tecnologias back end
 
