@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj": {}
+    "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj": {}
   },
   "projects": {
-    "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj": {
+    "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj",
+        "projectUniqueName": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj",
         "projectName": "DPBack.Domain.API",
-        "projectPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj",
+        "projectPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.API\\obj\\",
+        "outputPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj": {
-                "projectPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj"
+              "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj": {
+                "projectPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj"
               },
-              "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj": {
-                "projectPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj"
+              "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj": {
+                "projectPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj": {
+    "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj",
+        "projectUniqueName": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj",
         "projectName": "DPBack.Domain.Infra",
-        "projectPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj",
+        "projectPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain.Infra\\obj\\",
+        "outputPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -106,8 +106,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj": {
-                "projectPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj"
+              "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj": {
+                "projectPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj"
               }
             }
           }
@@ -121,6 +121,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -140,14 +156,14 @@
         }
       }
     },
-    "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj": {
+    "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj",
+        "projectUniqueName": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj",
         "projectName": "DPBack.Domain",
-        "projectPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj",
+        "projectPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\DPBack.Domain.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\VSCode\\dreampet\\back\\DPBack\\DPBack.Domain\\obj\\",
+        "outputPath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

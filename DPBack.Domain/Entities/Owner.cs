@@ -28,7 +28,8 @@ namespace DPBack.Domain.Entities
             Address = address;
             Fone = fone;
             Document = document;
-            _listPets = new List<BasePet>();
+            CreateDate = DateTime.Now;
+            _listPets = new List<BasePet>();            
         }
 
         

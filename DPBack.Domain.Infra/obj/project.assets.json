@@ -93,7 +93,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/_._": {}
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
@@ -133,7 +133,7 @@
           "Microsoft.Extensions.Primitives": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
@@ -761,7 +761,8 @@
       "DPBack.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
-      "Microsoft.EntityFrameworkCore.InMemory >= 5.0.5"
+      "Microsoft.EntityFrameworkCore.InMemory >= 5.0.5",
+      "Microsoft.EntityFrameworkCore.Relational >= 5.0.5"
     ]
   },
   "packageFolders": {
@@ -823,6 +824,10 @@
             "version": "[5.0.5, )"
           },
           "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[5.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[5.0.5, )"
           }

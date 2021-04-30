@@ -6,5 +6,6 @@ namespace DPBack.Domain
         void Add();
         void Edit();
         void Delete();
+        
     }
 }
