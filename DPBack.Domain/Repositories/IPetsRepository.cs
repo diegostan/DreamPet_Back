@@ -9,5 +9,6 @@ namespace DPBack.Domain.Repositories
     public interface IPetsRepository : IRepository
     {
         IEnumerable<BasePet> GetByOwner(Owner owner);
+        void Create(Pet pet);
     }
 }

@@ -16,14 +16,14 @@ namespace BPBack.Domain.Infra.Contexts
 
         protected override void OnModelCreating(ModelBuilder model)
         {
-            model.Entity<Owner>().Property(x => x.Id);
-            model.Entity<Owner>().Property(x => x.Name.FirstName).HasColumnType("varchar(20)");
-            model.Entity<Owner>().HasIndex(x => x.Name.FirstName);
-            model.Entity<Owner>().Property(x => x.Name.LastName).HasColumnType("varchar(20)");;
-            model.Entity<Owner>().Property(x => x.Document.DocumentNumber).HasColumnType("varchar(50)");
-            model.Entity<Owner>().Property(x => x.Document.DocumentType).HasColumnType("bit"); 
-            model.Entity<Owner>().Property(x => x.CreateDate); 
-            model.Entity<Owner>().Property(x => x.Address);              
+            model.Entity<Owner>().Property(s => s.Id);
+            model.Entity<Owner>().Property(s => s.Name.FirstName).HasColumnType("varchar(20)");
+            model.Entity<Owner>().HasIndex(s => s.Name.FirstName);
+            model.Entity<Owner>().Property(s => s.Name.LastName).HasColumnType("varchar(20)");;
+            model.Entity<Owner>().Property(s => s.Document.DocumentNumber).HasColumnType("varchar(50)");
+            model.Entity<Owner>().Property(s => s.Document.DocumentType).HasColumnType("bit"); 
+            model.Entity<Owner>().Property(s => s.CreateDate); 
+            model.Entity<Owner>().Property(s => s.Address);              
         }
     }
 

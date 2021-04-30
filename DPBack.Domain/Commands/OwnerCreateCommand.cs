@@ -10,7 +10,7 @@ namespace DPBack.Domain.Commands
     public class OwnerCreateCommand : BaseEntity, ICommandBase
     {
 
-          public Name Name{get;private set;}
+        public Name Name{get;private set;}
         public string Address {get;private set;}
         public string Fone {get; private set;}
         public Document Document {get;private set;}

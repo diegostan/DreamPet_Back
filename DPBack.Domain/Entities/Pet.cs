@@ -5,21 +5,21 @@ using DPBack.Domain.ValueObjects;
 
 namespace DPBack.Domain.Entities
 {
-    public class DogPet:BasePet
+    public class Pet:BasePet
     {
        
         //Single entry point
-        public DogPet(Name name, Owner owner, DateTime age
-        , ESpecie specie, EPersonality personality, string breed) 
-        : base(name, owner, age, specie)
+        public Pet(Name name, Owner owner
+        , ESpecie specie, EPersonality personality, string breed, DateTime nasciment) 
+        : base(name, owner, nasciment ,specie)
         {             
              Personality = personality;
              Breed = breed;
         }
         public string Breed{get; private set;}
         public ECoat Coat {get; private set;}
-        public EPersonality Personality {get; private set;}
-             
+        public EPersonality Personality {get; private set;} 
+
     }
         
 }
