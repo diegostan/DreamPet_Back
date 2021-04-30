@@ -12,7 +12,7 @@ namespace BPBack.Domain.Infra.Contexts
         {
         }
 
-        DbSet<Owner> Owner{get;set;}
+        DbSet<Owner> Owners{get;set;}
 
         protected override void OnModelCreating(ModelBuilder model)
         {

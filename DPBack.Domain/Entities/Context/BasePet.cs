@@ -8,22 +8,24 @@ namespace DPBack.Domain.Entities.Context
     public abstract class BasePet: BaseEntity
     {      
 
-        protected BasePet(Name name, Owner owner, EPetSize size):base()
+        //Single entry point
+        protected BasePet(Name name, Owner owner, DateTime nascimentDate, ESpecie specie)
         {
-            Name = name;            
+            Name = name;
             Owner = owner;            
-            Size = size;            
+            NascimentDate = NascimentDate;
+            Specie = specie;
         }
 
-        public Name Name {get;private set;}        
-        public Owner Owner {get; private set;}        
-        public EPetSize Size {get; private set;}        
+        public Name Name {get;private set;}
+        public Owner Owner {get; private set;}
+        public EPetSize Size {get; private set;}
         public string IdentityNumber {get;private set;}
-        public double Age{get;set;}
-        public void SetName(Name name)
-        {            
-            Name = name;
-        }
+        public DateTime NascimentDate{get; private set;}
+        public ESpecie Specie {get; private set;}
         
+        public virtual void SetName(Name name){}
+        public virtual void SetSize(EPetSize size){}
+        public virtual void SetIdentityNumber(string number){}       
     }   
 }
