@@ -18,9 +18,9 @@ namespace BPBack.Domain.Infra.Repository
             model.Entity<Owner>().Property(x => x.Id);
             model.Entity<Owner>().Property(x => x.Name.FirstName);
             model.Entity<Owner>().Property(x => x.Name.LastName);
-            model.Entity<Owner>().Property(x => x.Document.DocumentNumber).HasColumnType("varchar(50)");
-            model.Entity<Owner>().Property(x => x.Document.DocumentType).HasColumnType("bit");
+            //model.Entity<Owner>().Property(x => x.Document.DocumentNumber).HasColumnType("varchar(50)");
+            //model.Entity<Owner>().Property(x => x.Document.DocumentType).HasColumnType("bit");
         }
     }
-    
+
 }
