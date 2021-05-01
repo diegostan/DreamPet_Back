@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Infrastructure; // <<< ???  
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace BPBack.Domain.Infra.Contexts
+namespace DPBack.Domain.Infra.Contexts
 {
-    public class OwnerContext : DbContext
+    public class OwnerContext:DbContext
     {
         public OwnerContext(DbContextOptions options) : base(options)
         {

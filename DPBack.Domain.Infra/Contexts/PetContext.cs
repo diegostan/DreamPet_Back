@@ -1,9 +1,11 @@
 using DPBack.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore.Infrastructure; // <<< ???  
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DPBack.Domain.Infra.Contexts
-{
-    
+{    
     public class PetContext:DbContext
     {
         public PetContext(DbContextOptions options) : base(options)
