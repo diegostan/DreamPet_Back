@@ -31,7 +31,7 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 ## Modelagem e estrutura
 
-* A modelagem do back é com DDD e TDD 
+* A modelagem do back é baseado em DDD e TDD 
 * A aplicação terá domínio rico, o DB só serivrá de repos
 * Criou uma entidade ? Crie um teste para ela!
 * Testes testes e mais testes. Vai que a aplicação cresce a nível global 🤣💜
