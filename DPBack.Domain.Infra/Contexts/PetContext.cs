@@ -11,7 +11,7 @@ namespace DPBack.Domain.Infra.Contexts
         public PetContext(DbContextOptions options) : base(options)
         {
         }
-        DbSet<Pet> Pets {get;set;}
+        public DbSet<Pet> Pets {get;set;}
 
         protected override void OnModelCreating(ModelBuilder model)
         {

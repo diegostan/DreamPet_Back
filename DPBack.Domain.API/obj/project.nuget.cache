@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/x29LJ8aMJ0d7OIPsCFXwIPhnk+cY0tvsk11Y2rDHHEu97QLx7gjp+O092cUhu0UMfzdUM0XWMur1fRXGfvfOQ==",
+  "dgSpecHash": "bEfTlvFZ9hoaSDpg7sY4BbMSVqUK28LXSzD9nG9AtPp55Fg6H/W0sJF4+nXhFKPouHujxyED9oF00F4i1UPvRg==",
   "success": true,
   "projectFilePath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.API\\DPBack.Domain.API.csproj",
   "expectedPackageFiles": [
@@ -8,9 +8,11 @@
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.5\\microsoft.entityframeworkcore.inmemory.5.0.5.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",

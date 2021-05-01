@@ -5,7 +5,7 @@ using DPBack.Domain.Repositories.Interfaces;
 
 namespace DPBack.Domain.Repositories
 {
-    public interface IOwnerRepository : IRepository
+    public interface IOwnerRepository
     {
         Owner GetByNameId(Guid id);
 

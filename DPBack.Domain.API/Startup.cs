@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using DPBack.Domain.Infra.Contexts;
+using DPBack.Domain.Infra.Repositories;
+using DPBack.Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace DPBack.Domain.API
@@ -28,7 +25,15 @@ namespace DPBack.Domain.API
         {
 
             services.AddControllers();
-            services.AddMvc();                        
+            services.AddMvc();
+            //Cofiguração da base de dados
+            services.AddDbContext<OwnerContext>(opt => opt.UseInMemoryDatabase("data"));
+            services.AddDbContext<PetContext>(opt => opt.UseInMemoryDatabase("data"));  
+
+            //Injeção de dependencia
+            services.AddTransient<IOwnerRepository, OwnerRepository>();
+            services.AddTransient<IPetsRepository, PetRepository>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DPBack.Domain.API", Version = "v1" });
