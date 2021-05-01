@@ -12,9 +12,9 @@ namespace DPBack.Domain.Infra.Repositories
 {
     public class PetRepository : IPetsRepository
     {
-        readonly PetContext _repositoryContext;
+        readonly DataContext _repositoryContext;
 
-        public PetRepository(PetContext repositoryContext)
+        public PetRepository(DataContext repositoryContext)
         {
             _repositoryContext = repositoryContext;
         }

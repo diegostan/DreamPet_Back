@@ -31,3 +31,9 @@ C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\DPBack.Domain.
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\DPBack.Domain.Infra.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\DPBack.Domain.pdb
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\DPBack.Domain.Infra.pdb
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll

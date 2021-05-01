@@ -6,13 +6,15 @@ using System.Collections.Generic;
 
 using System.ComponentModel.DataAnnotations;
 using DPBack.Domain.Entities;
+using DPBack.Domain.Commands;
+using DPBack.Domain.Handlers;
 
 namespace DPBack.Domain.API.Controllers
 {
-    [ApiController]
-    [Authorize]
+    
+    
     [Route("/v1/owner")]
-    public class OwnerController:Controller
+    public class OwnerController:ControllerBase
     {
         
         [Route("")]
@@ -24,9 +26,12 @@ namespace DPBack.Domain.API.Controllers
 
         [Route("")]
         [HttpPost]
-        public void CreateOwner([FromServices]IOwnerRepository repository, [FromBody]Owner owner, Guid id)
+        public CommandResult CreateOwner ([FromServices]IOwnerRepository repository
+        , [FromBody]OwnerCreateCommand command,[FromServices]OwnerCreateHandler handler)
         {
-            repository.Create(owner);
+            return (CommandResult)handler.Handle(command);
         }
+
+
     }
 }

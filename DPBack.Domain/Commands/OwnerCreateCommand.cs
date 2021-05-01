@@ -20,18 +20,18 @@ namespace DPBack.Domain.Commands
         {
             
             
-            if (Document.DocumentType==EDocumentType.CPF)
-            {
-                AddNotifications("Document.DocumentNumber", "O CPF é inválido");                
-                return DocumentsValidations.IsCpf(Document.DocumentNumber);                
-            }
+            // if (Document.DocumentType==EDocumentType.CPF)
+            // {
+            //     AddNotifications("Document.DocumentNumber", "O CPF é inválido");                
+            //     return DocumentsValidations.IsCpf(Document.DocumentNumber);                
+            // }
 
-             if (Document.DocumentType==EDocumentType.CNPJ)
-            {
-                AddNotifications("Document.DocumentNumber", "O CNPJ é inválido");                
-                return DocumentsValidations.IsCnpj(Document.DocumentNumber);
+            //  if (Document.DocumentType==EDocumentType.CNPJ)
+            // {
+            //     AddNotifications("Document.DocumentNumber", "O CNPJ é inválido");                
+            //     return DocumentsValidations.IsCnpj(Document.DocumentNumber);
                 
-            }
+            // }
 
             return true;            
         }

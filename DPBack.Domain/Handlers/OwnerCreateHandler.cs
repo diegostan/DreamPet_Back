@@ -10,6 +10,12 @@ namespace DPBack.Domain.Handlers
     public class OwnerCreateHandler : IHandlerBase<OwnerCreateCommand>
     {
         public readonly IOwnerRepository _repository;
+
+        public OwnerCreateHandler(IOwnerRepository repository)
+        {
+            _repository = repository;
+        }
+
         public ICommandResult Handle(OwnerCreateCommand command)
         {
             

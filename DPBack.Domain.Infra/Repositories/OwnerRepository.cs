@@ -12,16 +12,16 @@ namespace DPBack.Domain.Infra.Repositories
     public class OwnerRepository : IOwnerRepository
     {
         
-        readonly OwnerContext _repositoryContext;
+        readonly DataContext _repositoryContext;
 
-        public OwnerRepository(OwnerContext context)
+        public OwnerRepository(DataContext context)
         {
             _repositoryContext = context;
         }
 
         public void Create(Owner owner)
         {
-            _repositoryContext.Add(owner);
+            _repositoryContext.Owners.Add(owner);
             _repositoryContext.SaveChanges();
         }
         

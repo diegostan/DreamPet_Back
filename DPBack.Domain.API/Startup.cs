@@ -1,3 +1,4 @@
+using DPBack.Domain.Handlers;
 using DPBack.Domain.Infra.Contexts;
 using DPBack.Domain.Infra.Repositories;
 using DPBack.Domain.Repositories;
@@ -27,12 +28,13 @@ namespace DPBack.Domain.API
             services.AddControllers();
             services.AddMvc();
             //Cofiguração da base de dados
-            services.AddDbContext<OwnerContext>(opt => opt.UseInMemoryDatabase("data"));
-            services.AddDbContext<PetContext>(opt => opt.UseInMemoryDatabase("data"));  
+            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("data"));
+            
 
             //Injeção de dependencia
             services.AddTransient<IOwnerRepository, OwnerRepository>();
             services.AddTransient<IPetsRepository, PetRepository>();
+            services.AddTransient<OwnerCreateHandler, OwnerCreateHandler>();
 
             services.AddSwaggerGen(c =>
             {
