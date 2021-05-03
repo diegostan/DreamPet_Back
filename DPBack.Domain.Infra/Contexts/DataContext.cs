@@ -2,12 +2,15 @@ using DPBack.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Infrastructure; // <<< ???  
-using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DPBack.Domain.Infra.Contexts
 {
     public class DataContext:DbContext
     {
+         public DataContext()
+    {
+    }
         public DataContext(DbContextOptions options) : base(options)
         {
         }
@@ -16,31 +19,38 @@ namespace DPBack.Domain.Infra.Contexts
         public DbSet<Pet> Pets{get;set;}
 
         protected override void OnModelCreating(ModelBuilder model)
-        {
-            model.Entity<Owner>().ToTable("Owners");
-            model.Entity<Owner>().Property(s => s.Id);
-            model.Entity<Owner>().OwnsOne(s => s.Name).Property(x => x.FirstName);
-            model.Entity<Owner>().OwnsOne(s => s.Name).Property(x => x.LastName);                
-            model.Entity<Owner>().OwnsOne(s => s.Name).HasIndex(s => s.FirstName);
-            model.Entity<Owner>().OwnsOne(s =>s.Name).Property(s => s.LastName);
-            model.Entity<Owner>().OwnsOne(s =>s.Document).Property(x => x.DocumentNumber);
-            model.Entity<Owner>().OwnsOne(s => s.Document).Property(x => x.DocumentType); 
-            model.Entity<Owner>().Property(s => s.CreateDate); 
-            model.Entity<Owner>().Property(s => s.Address);             
+        {            
+            model.Entity<Owner>().HasKey(s => s.Id);
+            model.Entity<Owner>().OwnsOne(s => s.Name, od=>
+            {
+                od.Property(d => d.FirstName);
+                od.Property(d => d.FirstName).UsePropertyAccessMode(PropertyAccessMode.Property);
+                od.Property(d => d.LastName);
+                od.Property(f => f.LastName).UsePropertyAccessMode(PropertyAccessMode.Property);
+            });
 
-            // model.Entity<Pet>().ToTable("Pets");
-            // model.Entity<Pet>().Property(s => s.Id);
-            // model.Entity<Pet>().Property(s => s.Name.FirstName);
-            // model.Entity<Pet>().HasIndex(s => s.Name.FirstName);
-            // model.Entity<Pet>().Property(s => s.Name.LastName);
-            // model.Entity<Pet>().Property(s => s.Age);
-            // model.Entity<Pet>().Property(s => s.NascimentDate);
-            // model.Entity<Pet>().Property(s => s.Breed);
-            // model.Entity<Pet>().Property(s => s.Coat);
-            // model.Entity<Pet>().Property(s => s.Personality);
-            // model.Entity<Pet>().Property(s => s.Size);
-            // model.Entity<Pet>().Property(s => s.Specie);
-            // model.Entity<Pet>().Property(s => s.IdentityNumber);    
+            model.Entity<Owner>().Property(s => s.Address);
+            model.Entity<Owner>().Property(s => s.Fone);
+            
+            model.Entity<Owner>().OwnsOne(s => s.Document, od=>
+            {
+                od.Property(d => d.DocumentNumber);
+                od.Property(d => d.DocumentNumber).UsePropertyAccessMode(PropertyAccessMode.Property);
+                od.Property(d => d.DocumentType);
+                od.Property(d => d.DocumentType).UsePropertyAccessMode(PropertyAccessMode.Property);
+            });
+            model.Entity<Owner>().Ignore(s=> s.Notifications);
+                
+            //Pets 
+             model.Entity<Pet>().OwnsOne(s => s.Name, od=>
+            {
+                od.Property(d => d.FirstName);
+                od.Property(d => d.FirstName).UsePropertyAccessMode(PropertyAccessMode.Property);
+                od.Property(d => d.LastName);
+                od.Property(f => f.LastName).UsePropertyAccessMode(PropertyAccessMode.Property);
+            });
+            model.Entity<Pet>().Ignore(s=> s.Notifications);
+                            
         }
     }
 

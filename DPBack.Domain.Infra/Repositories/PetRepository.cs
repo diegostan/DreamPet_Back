@@ -27,7 +27,7 @@ namespace DPBack.Domain.Infra.Repositories
 
         public void Create(Pet pet)
         {
-            _repositoryContext.Add(pet);
+            _repositoryContext.Pets.Add(pet);
             _repositoryContext.SaveChanges();
         }
        

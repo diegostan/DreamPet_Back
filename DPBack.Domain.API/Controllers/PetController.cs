@@ -7,11 +7,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Entities.Context;
+using DPBack.Domain.Handlers;
+using DPBack.Domain.Commands;
 
 namespace DPBack.Domain.API.Controllers
 {
     
-    [Authorize]
+    
     [Route("/v1/pets")]
     public class PetController:ControllerBase
     {
@@ -25,9 +27,10 @@ namespace DPBack.Domain.API.Controllers
 
         [Route("")]
         [HttpPost]
-        public void CreateOwner([FromServices]IOwnerRepository repository, [FromBody]Owner owner, Guid id)
+       public CommandResult CreatePet ([FromServices]IPetsRepository repository
+        , [FromBody]PetCreateCommand command,[FromServices]PetCreateHandler handler)
         {
-            repository.Create(owner);
+            return (CommandResult)handler.Handle(command);
         }
     }
 }

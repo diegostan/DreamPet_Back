@@ -10,8 +10,7 @@ namespace DPBack.Domain
         [TestMethod]        
         public void VerificaNome()
         {
-            var name = new Name("Diego", "Magalhaes");
-            Assert.IsTrue(name.NameValidation(name));            
+                 
         }       
        
     }

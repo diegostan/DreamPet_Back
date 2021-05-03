@@ -2,16 +2,22 @@ using System;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DPBack.Domain.Entities
 {
     public class Pet:BasePet
     {
        
+        protected Pet()
+        {
+
+        }
         //Single entry point
-        public Pet(Name name, Owner owner
-        , ESpecie specie, EPersonality personality, string breed, DateTime nasciment) 
-        : base(name, owner, nasciment ,specie)
+        public Pet(Name name, Guid ownerId
+        , ESpecie specie, EPersonality personality, string breed) 
+        : base(name, ownerId ,specie)
         {             
              Personality = personality;
              Breed = breed;

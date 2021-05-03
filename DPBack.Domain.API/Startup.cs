@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System.Data.SqlClient;
 
 namespace DPBack.Domain.API
 {
@@ -28,13 +29,16 @@ namespace DPBack.Domain.API
             services.AddControllers();
             services.AddMvc();
             //Cofiguração da base de dados
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("data"));
+           // services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("data"));
+            services.AddDbContext<DataContext>(opt => 
+            opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             
 
             //Injeção de dependencia
             services.AddTransient<IOwnerRepository, OwnerRepository>();
             services.AddTransient<IPetsRepository, PetRepository>();
             services.AddTransient<OwnerCreateHandler, OwnerCreateHandler>();
+            services.AddTransient<PetCreateHandler, PetCreateHandler>();
 
             services.AddSwaggerGen(c =>
             {

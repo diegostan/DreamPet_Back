@@ -3,18 +3,20 @@ using System.Text.RegularExpressions;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Entities.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace DPBack.Domain.ValueObjects
 {
-    public sealed class Document:BaseEntity
+    
+    public class Document
     {
         public Document(string documentNumber, EDocumentType documentType)
         {
             DocumentNumber = documentNumber;
             DocumentType = documentType;
         }
-        public string DocumentNumber{get; private set;}
-        public EDocumentType DocumentType {get;private set;}
+        public string DocumentNumber{get;  set;}
+        public EDocumentType DocumentType {get; set;}
 
        
     }

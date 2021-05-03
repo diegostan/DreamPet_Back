@@ -16,11 +16,11 @@ namespace DPBack.Domain.API.Controllers
     [Route("/v1/owner")]
     public class OwnerController:ControllerBase
     {
-        
-        [Route("")]
+        [AllowAnonymous]        
+        [Route("{id:guid}")]
         [HttpGet]
-        public Owner GetByNameId([FromServices]IOwnerRepository repository, [FromBody]Guid id)
-        {
+        public Owner GetByNameId([FromServices]IOwnerRepository repository, Guid id)
+        {            
             return repository.GetByNameId(id);
         }
 

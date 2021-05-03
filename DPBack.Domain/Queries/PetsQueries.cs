@@ -9,7 +9,7 @@ namespace DPBack.Domain.Queries
     {
         public static Expression<Func<BasePet, bool>> GetByOwner(Owner owner)
         {
-            return (s => s.Owner.Id == owner.Id);
+            return (s => s.OwnerID == owner.Id);
         } 
     }
 }
