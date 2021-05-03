@@ -1,5 +1,6 @@
 # DreamPet_Back 
 ### Todo código backend da aplicação
+### Primeiro teste funcional em 02/05/2021 as 23:56 💜(e funcionou kkk)
 
 ## 💜 DreamPet 💜
 
@@ -31,7 +32,7 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 ## Modelagem e estrutura
 
-* A modelagem do back é com DDD e TDD 
+* A modelagem do back é baseado em DDD e TDD 
 * A aplicação terá domínio rico, o DB só serivrá de repos
 * Criou uma entidade ? Crie um teste para ela!
 * Testes testes e mais testes. Vai que a aplicação cresce a nível global 🤣💜
@@ -40,8 +41,8 @@ a ideia é desenvolver uma API Clean Code com alta taxa de manutenção e escala
 
 * Integração de sistema de autorização
 * Integração de sistema de autenticação
-* Integrar os Handler no Dominio 
-* Implementar o Repository Patterns
+* Integrar os Handler no Dominio (OK)
+* Implementar o Repository Patterns (OK)
 
 ## Tecnologias back end
 
