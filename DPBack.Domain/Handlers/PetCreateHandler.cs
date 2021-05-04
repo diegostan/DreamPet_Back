@@ -21,7 +21,7 @@ namespace DPBack.Domain.Handlers
             if(!command.Validate())
                 return new CommandResult(false, "PetCreateCommand", "Não foi possivel criar o pet");
 
-            var pet = new Pet(command.Name, command.OwnerId, command.Specie, command.Personality
+            var pet = new Pet(command.Name, command.OwnerID, command.Specie, command.Personality
             , command.Breed);   
             _repository.Create(pet); 
             return new CommandResult(true, "PetCreateCommand", "Pet criado com sucesso");

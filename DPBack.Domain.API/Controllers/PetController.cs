@@ -9,6 +9,7 @@ using DPBack.Domain.Entities;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Handlers;
 using DPBack.Domain.Commands;
+using System.Linq;
 
 namespace DPBack.Domain.API.Controllers
 {
@@ -17,18 +18,21 @@ namespace DPBack.Domain.API.Controllers
     [Route("/v1/pets")]
     public class PetController:ControllerBase
     {
-        
-        [Route("")]
+        [AllowAnonymous]        
+        [Route("{id:guid}")]
         [HttpGet]
-        public IEnumerable<BasePet> GetByNameId([FromServices]IPetsRepository repository, [FromBody]Owner owner)
-        {
-            return repository.GetByOwner(owner);
+        public IEnumerable<Pet> GetByOwnerId([FromServices]IPetsRepository repository, Guid id
+        )
+        {            
+            var ret = repository.GetByOwnerId(id);
+            return ret;
         }
-
+        
+        [AllowAnonymous]        
         [Route("")]
         [HttpPost]
-       public CommandResult CreatePet ([FromServices]IPetsRepository repository
-        , [FromBody]PetCreateCommand command,[FromServices]PetCreateHandler handler)
+       public CommandResult CreatePet ([FromBody]PetCreateCommand command
+       ,[FromServices]PetCreateHandler handler)
         {
             return (CommandResult)handler.Handle(command);
         }

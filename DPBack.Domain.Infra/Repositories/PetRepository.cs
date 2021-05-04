@@ -7,6 +7,7 @@ using System.Linq;
 using System.Collections.Generic;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Repositories;
+using System;
 
 namespace DPBack.Domain.Infra.Repositories
 {
@@ -14,15 +15,15 @@ namespace DPBack.Domain.Infra.Repositories
     {
         readonly DataContext _repositoryContext;
 
-        public PetRepository(DataContext repositoryContext)
+        public PetRepository(DataContext context)
         {
-            _repositoryContext = repositoryContext;
+            _repositoryContext = context;
         }
 
-        public IEnumerable<BasePet> GetByOwner(Owner owner)
+        public IEnumerable<Pet> GetByOwnerId(Guid ownerid)
         {
             return _repositoryContext.Pets.AsNoTracking()
-            .Where(PetsQueries.GetByOwner(owner)).OrderBy(s => s.Name);
+            .Where(PetsQueries.GetByOwnerId(ownerid)).OrderBy(s => s.Name);
         }
 
         public void Create(Pet pet)

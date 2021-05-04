@@ -42,12 +42,13 @@ namespace DPBack.Domain.Infra.Contexts
             model.Entity<Owner>().Ignore(s=> s.Notifications);
                 
             //Pets 
+            //Corrigir os contextos no SQLSERVER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
              model.Entity<Pet>().OwnsOne(s => s.Name, od=>
             {
                 od.Property(d => d.FirstName);
                 od.Property(d => d.FirstName).UsePropertyAccessMode(PropertyAccessMode.Property);
                 od.Property(d => d.LastName);
-                od.Property(f => f.LastName).UsePropertyAccessMode(PropertyAccessMode.Property);
+                od.Property(d => d.LastName).UsePropertyAccessMode(PropertyAccessMode.Property);
             });
             model.Entity<Pet>().Ignore(s=> s.Notifications);
                             

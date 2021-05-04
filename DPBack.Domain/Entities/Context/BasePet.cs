@@ -11,13 +11,13 @@ namespace DPBack.Domain.Entities.Context
 
         //Single entry point
         protected BasePet(){}
-        protected BasePet(Name name, Guid ownerid, ESpecie specie)
+        public BasePet(Name name, Guid ownerid, ESpecie specie)
         {
             Name = name;
             OwnerID = ownerid;            
             
             Specie = specie;
-            AgeCalculate(NascimentDate);
+            AgeCalculate(NascimentDate.Date);
         }
         string _age;
         public Name Name {get;private set;}        
@@ -34,7 +34,7 @@ namespace DPBack.Domain.Entities.Context
 
         internal void AgeCalculate(DateTime date)
         {
-            _age = date.Subtract(DateTime.Now).Days.ToString();
+            _age = date.Subtract(DateTime.Now.Date).Days.ToString();
         }     
     }   
 }

@@ -9,11 +9,8 @@ namespace DPBack.Domain.Entities
 {
     public class Pet:BasePet
     {
-       
-        protected Pet()
-        {
-
-        }
+        protected Pet(){}
+              
         //Single entry point
         public Pet(Name name, Guid ownerId
         , ESpecie specie, EPersonality personality, string breed) 

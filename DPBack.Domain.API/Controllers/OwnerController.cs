@@ -26,8 +26,8 @@ namespace DPBack.Domain.API.Controllers
 
         [Route("")]
         [HttpPost]
-        public CommandResult CreateOwner ([FromServices]IOwnerRepository repository
-        , [FromBody]OwnerCreateCommand command,[FromServices]OwnerCreateHandler handler)
+        public CommandResult CreateOwner (
+            [FromBody]OwnerCreateCommand command,[FromServices]OwnerCreateHandler handler)
         {
             return (CommandResult)handler.Handle(command);
         }
