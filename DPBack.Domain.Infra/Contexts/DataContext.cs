@@ -1,4 +1,5 @@
 using DPBack.Domain.Entities;
+using DPBack.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Infrastructure; // <<< ???  
@@ -8,50 +9,45 @@ namespace DPBack.Domain.Infra.Contexts
 {
     public class DataContext:DbContext
     {
-         public DataContext()
-    {
-    }
+ 
+        public DataContext(){}
         public DataContext(DbContextOptions options) : base(options)
         {
+            
         }
 
         public DbSet<Owner> Owners{get;set;}
         public DbSet<Pet> Pets{get;set;}
 
-        protected override void OnModelCreating(ModelBuilder model)
-        {            
-            model.Entity<Owner>().HasKey(s => s.Id);
-            model.Entity<Owner>().OwnsOne(s => s.Name, od=>
-            {
-                od.Property(d => d.FirstName);
-                od.Property(d => d.FirstName).UsePropertyAccessMode(PropertyAccessMode.Property);
-                od.Property(d => d.LastName);
-                od.Property(f => f.LastName).UsePropertyAccessMode(PropertyAccessMode.Property);
-            });
-
-            model.Entity<Owner>().Property(s => s.Address);
-            model.Entity<Owner>().Property(s => s.Fone);
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {         
             
-            model.Entity<Owner>().OwnsOne(s => s.Document, od=>
-            {
-                od.Property(d => d.DocumentNumber);
-                od.Property(d => d.DocumentNumber).UsePropertyAccessMode(PropertyAccessMode.Property);
-                od.Property(d => d.DocumentType);
-                od.Property(d => d.DocumentType).UsePropertyAccessMode(PropertyAccessMode.Property);
-            });
-            model.Entity<Owner>().Ignore(s=> s.Notifications);
+            
+            modelBuilder.Entity<Owner>().HasKey(s => s.Id);
+            
+            modelBuilder.Entity<Owner>().Property(s => s.Address).HasColumnName("Address").HasColumnType("varchar(32)");
+            modelBuilder.Entity<Owner>().Property(s => s.Fone).HasColumnName("Fone").HasColumnType("varchar(16)");;
+                        
+            modelBuilder.Entity<Owner>().Ignore(s=> s.Notifications);
                 
             //Pets 
             //Corrigir os contextos no SQLSERVER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-             model.Entity<Pet>().OwnsOne(s => s.Name, od=>
-            {
-                od.Property(d => d.FirstName);
-                od.Property(d => d.FirstName).UsePropertyAccessMode(PropertyAccessMode.Property);
-                od.Property(d => d.LastName);
-                od.Property(d => d.LastName).UsePropertyAccessMode(PropertyAccessMode.Property);
-            });
-            model.Entity<Pet>().Ignore(s=> s.Notifications);
-                            
+            
+             modelBuilder.Entity<Pet>().HasKey(s => s.Id);
+             modelBuilder.Entity<Pet>().HasIndex(s => s.OwnerID);
+            
+           
+
+            modelBuilder.Entity<Pet>().Property(s => s.Size).HasColumnName("Size").HasColumnType("int");
+            modelBuilder.Entity<Pet>().Property(s => s.IdentityNumber).HasColumnName("IdentityNumber").HasColumnType("varchar(128)");
+            modelBuilder.Entity<Pet>().Property(s => s.NascimentDate).HasColumnName("NascimentDate").HasColumnType("date");
+            modelBuilder.Entity<Pet>().Property(s => s.Specie).HasColumnName("Specie").HasColumnType("int");
+            modelBuilder.Entity<Pet>().Property(s => s.Personality).HasColumnName("Personality").HasColumnType("int");
+            modelBuilder.Entity<Pet>().Property(s => s.Breed).HasColumnName("Breed").HasColumnType("varchar(20)");
+                        
+            modelBuilder.Entity<Pet>().Ignore(s=> s.Age);
+            modelBuilder.Entity<Pet>().Ignore(s=> s.Notifications);
+            base.OnModelCreating(modelBuilder);
         }
     }
 

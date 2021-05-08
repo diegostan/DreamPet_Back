@@ -1,15 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.ValueObjects;
 using Document = DPBack.Domain.ValueObjects.Document;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 namespace DPBack.Domain.Entities
-{    
+{
     public class Owner:BaseEntity
     {                
         public Name Name{get;private set;}

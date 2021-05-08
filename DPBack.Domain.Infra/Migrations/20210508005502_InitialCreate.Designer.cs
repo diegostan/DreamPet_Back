@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DPBack.Domain.Infra.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210503013953_InitialCreate")]
+    [Migration("20210508005502_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,13 +28,15 @@ namespace DPBack.Domain.Infra.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(32)")
+                        .HasColumnName("Address");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Fone")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(16)")
+                        .HasColumnName("Fone");
 
                     b.HasKey("Id");
 
@@ -48,30 +50,38 @@ namespace DPBack.Domain.Infra.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Breed")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)")
+                        .HasColumnName("Breed");
 
                     b.Property<int>("Coat")
                         .HasColumnType("int");
 
                     b.Property<string>("IdentityNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(128)")
+                        .HasColumnName("IdentityNumber");
 
                     b.Property<DateTime>("NascimentDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date")
+                        .HasColumnName("NascimentDate");
 
                     b.Property<Guid>("OwnerID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Personality")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Personality");
 
                     b.Property<int>("Size")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Size");
 
                     b.Property<int>("Specie")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Specie");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OwnerID");
 
                     b.ToTable("Pets");
                 });
@@ -84,10 +94,12 @@ namespace DPBack.Domain.Infra.Migrations
                                 .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("DocumentNumber")
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("DocumentNumber");
 
                             b1.Property<int>("DocumentType")
-                                .HasColumnType("int");
+                                .HasColumnType("int")
+                                .HasColumnName("DocumentType");
 
                             b1.HasKey("OwnerId");
 
@@ -103,10 +115,12 @@ namespace DPBack.Domain.Infra.Migrations
                                 .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("FirstName")
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("FirstName");
 
                             b1.Property<string>("LastName")
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("LastName");
 
                             b1.HasKey("OwnerId");
 
@@ -129,10 +143,12 @@ namespace DPBack.Domain.Infra.Migrations
                                 .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("FirstName")
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("FirstName");
 
                             b1.Property<string>("LastName")
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("LastName");
 
                             b1.HasKey("PetId");
 

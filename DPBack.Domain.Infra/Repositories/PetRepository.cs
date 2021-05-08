@@ -20,10 +20,10 @@ namespace DPBack.Domain.Infra.Repositories
             _repositoryContext = context;
         }
 
-        public IEnumerable<Pet> GetByOwnerId(Guid ownerid)
+        public IList<Pet> GetByOwnerId(Guid ownerid)
         {
             return _repositoryContext.Pets.AsNoTracking()
-            .Where(PetsQueries.GetByOwnerId(ownerid)).OrderBy(s => s.Name);
+            .Where(PetsQueries.GetByOwnerId(ownerid)).ToList();
         }
 
         public void Create(Pet pet)

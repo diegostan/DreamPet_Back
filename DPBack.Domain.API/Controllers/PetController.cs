@@ -22,10 +22,9 @@ namespace DPBack.Domain.API.Controllers
         [Route("{id:guid}")]
         [HttpGet]
         public IEnumerable<Pet> GetByOwnerId([FromServices]IPetsRepository repository, Guid id
-        )
-        {            
-            var ret = repository.GetByOwnerId(id);
-            return ret;
+        )        
+        {
+            return repository.GetByOwnerId(id);
         }
         
         [AllowAnonymous]        

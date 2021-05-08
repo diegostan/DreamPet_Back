@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel.DataAnnotations;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 
