@@ -6,8 +6,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DPBack.Domain.Test.Handlers
 {
+    //Red, green, refactory
     [TestClass]
-    public class OwnerCreateHandleTest
+    public class OwnerCreateHandlerTest
     {
     
         //Teste de falha do OwnerCreateHandler

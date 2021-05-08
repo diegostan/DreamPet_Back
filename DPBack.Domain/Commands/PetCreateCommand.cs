@@ -4,7 +4,7 @@ using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 
-namespace DPBack.Domain.Entities
+namespace DPBack.Domain.Commands
 {
     public class PetCreateCommand : BaseEntity, ICommandBase
     {
