@@ -25,6 +25,20 @@ namespace DPBack.Domain.Test.Handlers
             Assert.AreEqual(false, result.Ok);
         }
         
+          //Teste de validade do OwnerCreateHandler
+        [TestMethod]
+        public void HandlerValid()
+        {
+            var command = new OwnerCreateCommand();
+            command.Name = new ValueObjects.Name{FirstName="Diego", LastName="Magalhaes"};           
+
+            command.Document = new ValueObjects.Document("42413399054", Entities.Enums.EDocumentType.CPF);
+
+            var handle = new OwnerCreateHandler(new OwnerRepositoryTest());
+            var result = (CommandResult)handle.Handle(command);
+
+            Assert.AreEqual(true, result.Ok);
+        }
        
     }
 }
