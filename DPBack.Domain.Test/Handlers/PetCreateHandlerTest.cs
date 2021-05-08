@@ -23,5 +23,19 @@ namespace DPBack.Domain.Test.Handlers
 
             Assert.AreEqual(false, result.Ok);
         }
+
+        //Teste de validação do PetsCreateHandler
+        [TestMethod]
+        public void HandlerValid()
+        {            
+            var command = new PetCreateCommand();
+            command.Name = new ValueObjects.Name(){FirstName="Mufasa", LastName="Magalhaes"};
+            command.Breed = "Husky";
+            
+            var handle = new PetCreateHandler(new PetsRepositoryTest());
+            var result = (CommandResult)handle.Handle(command);
+
+            Assert.AreEqual(true, result.Ok);
+        }
     }
 }
