@@ -23,7 +23,7 @@ namespace DPBack.Domain.Entities
             Address = address;
             Fone = fone;
             Document = document;
-            CreateDate = DateTime.Now;             
+            CreateDate = DateTime.Now.Date;             
         }
 
     

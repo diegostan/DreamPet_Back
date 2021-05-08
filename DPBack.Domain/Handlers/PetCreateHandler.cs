@@ -19,12 +19,16 @@ namespace DPBack.Domain.Handlers
         public ICommandResult Handle(PetCreateCommand command)
         {            
             if(!command.Validate())
-                return new CommandResult(false, "PetCreateCommand", "Não foi possivel criar o pet");
+            {
+                var notifications = command.Notifications;
+                return new CommandResult(false, "PetCreateCommand", "Não foi possivel criar o pet"
+                , notifications);
+            }
 
             var pet = new Pet(command.Name, command.OwnerID, command.Specie, command.Personality
             , command.Breed);   
             _repository.Create(pet); 
-            return new CommandResult(true, "PetCreateCommand", "Pet criado com sucesso");
+            return new CommandResult(true, "PetCreateCommand", "Pet criado com sucesso", null);
         }
     }
 }

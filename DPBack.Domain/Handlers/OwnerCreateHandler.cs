@@ -21,12 +21,15 @@ namespace DPBack.Domain.Handlers
             
             if (!command.Validate())
             {
-                return new CommandResult(false, "OwnerCreateHandle", "Não foi possivel criar o usuário");
+                var notifications = command.Notifications;
+                return new CommandResult(false, "OwnerCreateHandle"
+                , "Não foi possivel criar o usuário"
+                , notifications);
             }
 
             var owner = new Owner(command.Name, command.Address, command.Fone, command.Document);
             _repository.Create(owner);
-            return new CommandResult(true, "OwnerCreateHandle", "Usuário criado com sucesso");
+            return new CommandResult(true, "OwnerCreateHandle", "Usuário criado com sucesso", null);
         }
     }
 }

@@ -15,9 +15,25 @@ namespace DPBack.Domain.Entities
         public EPersonality Personality {get; set;} 
              
         public bool Validate()
-        {            
+        {     
+             ClearNotifications();
 
-            return true;
+            if (NameValidations.FirstNameIsNotNull(Name))
+                AddNotifications("Name.FirstName", "O nome do pet não pode ser nulo");
+
+            if (NameValidations.LastNameIsNotNull(Name))
+                AddNotifications("Name.LastName", "O sobrenome do pet não pode ser nulo");
+            
+            if (NameValidations.FirstIsLenghtOk(Name, 3, 20))
+                AddNotifications("Name.FirstName", "O nome do pet deve conter entre 3 e 20 caracteres");
+
+            if (NameValidations.LastIsLenghtOk(Name, 3, 20))
+                AddNotifications("Name.LastName", "O sobrenome do pet deve conter entre 3 e 20 caracteres");
+            
+            if (string.IsNullOrEmpty(Breed))
+                AddNotifications("Breed", "A raça não pode estar em branco");
+
+            return (Notifications.Count==0)? true:false;
         }
     }
 }

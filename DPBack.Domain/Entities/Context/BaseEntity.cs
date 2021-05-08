@@ -25,6 +25,8 @@ namespace DPBack.Domain.Entities.Context
              _listNotifications.Add(new Notification {PropertyName=property, 
              MessageError = message});
         }
+
+        public void ClearNotifications(){_listNotifications.Clear();}
     }
 
 

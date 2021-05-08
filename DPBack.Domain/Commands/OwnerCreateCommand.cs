@@ -18,22 +18,36 @@ namespace DPBack.Domain.Commands
         
         public bool Validate()
         {
+            ClearNotifications();
+
+            if (NameValidations.FirstNameIsNotNull(Name))
+                AddNotifications("Name.FirstName", "O nome não pode ser nulo");
+
+            if (NameValidations.LastNameIsNotNull(Name))
+                AddNotifications("Name.LastName", "O sobrenome não pode ser nulo");
             
+            if (NameValidations.FirstIsLenghtOk(Name, 3, 20))
+                AddNotifications("Name.FirstName", "O nome deve conter entre 3 e 20 caracteres");
+
+            if (NameValidations.LastIsLenghtOk(Name, 3, 20))
+                AddNotifications("Name.LastName", "O sobrenome deve conter entre 3 e 20 caracteres");
             
+
             if (Document.DocumentType==EDocumentType.CPF)
             {
-                AddNotifications("Document.DocumentNumber", "O CPF é inválido");                
-                return DocumentsValidations.IsCpf(Document.DocumentNumber);                
-            }
-
+                if (!DocumentsValidations.IsCpf(Document.DocumentNumber))
+                    AddNotifications("Document.DocumentNumber", "O CPF é inválido");
+            }             
+            
              if (Document.DocumentType==EDocumentType.CNPJ)
             {
-                AddNotifications("Document.DocumentNumber", "O CNPJ é inválido");                
-                return DocumentsValidations.IsCnpj(Document.DocumentNumber);
-                
-            }
+                if (!DocumentsValidations.IsCnpj(Document.DocumentNumber))
+                    AddNotifications("Document.DocumentNumber", "O CNPJ é inválido");
+            }    
+                        
 
-            return true;            
+             
+            return (Notifications.Count == 0)? true:false;
         }
 
        
