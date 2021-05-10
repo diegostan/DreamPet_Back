@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'dreampet'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9da5e9c55efd4e17be7aea7ca61473bd }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d81c0a43905a4aa7af8801803717f94b }}
         package: .
