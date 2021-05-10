@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a0826a08-b2b2-421a-88a3-aa6c18a16fef/resourceGroups/DreamPet/providers/Microsoft.Web/sites/dreamPet",
+    "appService.deploySubpath": "DPBack.Domain.API"
+}
