@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Repositories;
 using System;
+using System.Threading.Tasks;
 
 namespace DPBack.Domain.Infra.Repositories
 {
@@ -20,10 +21,11 @@ namespace DPBack.Domain.Infra.Repositories
             _repositoryContext = context;
         }
 
-        public IList<Pet> GetByOwnerId(Guid ownerid)
+        public async Task<IList<Pet>> GetByOwnerId(Guid ownerid)
         {
-            return _repositoryContext.Pets.AsNoTracking()
-            .Where(PetsQueries.GetByOwnerId(ownerid)).ToList();
+            var result = await _repositoryContext.Pets.AsNoTracking()
+            .Where(PetsQueries.GetByOwnerId(ownerid)).ToListAsync();
+            return result;
         }
 
         public void Create(Pet pet)

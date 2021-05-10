@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System;
 using DPBack.Domain.Repositories;
+using System.Threading.Tasks;
 
 namespace DPBack.Domain.Infra.Repositories
 {
@@ -26,10 +27,11 @@ namespace DPBack.Domain.Infra.Repositories
         }
         
 
-        public Owner GetByNameId(Guid id)
+        public async Task<Owner> GetByNameId(Guid id)
         {
-           return _repositoryContext.Owners.AsNoTracking()
-           .Where(OwnerQueries.GetByNameId(id)).FirstOrDefault();
+            var result = await  _repositoryContext.Owners.AsNoTracking()
+           .Where(OwnerQueries.GetByNameId(id)).FirstOrDefaultAsync();            
+           return result;
         }
     }
 }

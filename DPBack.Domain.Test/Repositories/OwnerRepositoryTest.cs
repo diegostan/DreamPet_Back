@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Repositories;
 
@@ -11,7 +12,7 @@ namespace DPBack.Domain.Test.Repositories
             
         }
 
-        public Owner GetByNameId(Guid id)
+        public Task<Owner> GetByNameId(Guid id)
         {
             return null;
         }

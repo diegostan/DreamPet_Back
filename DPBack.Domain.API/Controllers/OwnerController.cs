@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Commands;
 using DPBack.Domain.Handlers;
+using System.Threading.Tasks;
 
 namespace DPBack.Domain.API.Controllers
 {
@@ -19,9 +20,10 @@ namespace DPBack.Domain.API.Controllers
         [AllowAnonymous]        
         [Route("{id:guid}")]
         [HttpGet]
-        public Owner GetByNameId([FromServices]IOwnerRepository repository, Guid id)
-        {            
-            return repository.GetByNameId(id);
+        public async Task<Owner> GetByNameId([FromServices]IOwnerRepository repository, Guid id)
+        {          
+            var result = await repository.GetByNameId(id);  
+            return result;
         }
 
         [Route("")]

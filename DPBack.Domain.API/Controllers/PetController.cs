@@ -10,6 +10,7 @@ using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Handlers;
 using DPBack.Domain.Commands;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DPBack.Domain.API.Controllers
 {
@@ -21,10 +22,12 @@ namespace DPBack.Domain.API.Controllers
         [AllowAnonymous]        
         [Route("{id:guid}")]
         [HttpGet]
-        public IEnumerable<Pet> GetByOwnerId([FromServices]IPetsRepository repository, Guid id
+        public async Task<IEnumerable<Pet>> GetByOwnerId([FromServices]IPetsRepository repository
+        , Guid id
         )        
         {
-            return repository.GetByOwnerId(id);
+            var result = await repository.GetByOwnerId(id);
+            return result;
         }
         
         [AllowAnonymous]
