@@ -26,7 +26,7 @@ namespace DPBack.Domain.Test.Handlers
             Assert.AreEqual(false, result.Ok);
         }
         
-          //Teste de validade do OwnerCreateHandler
+          //Teste de validacao do OwnerCreateHandler
         [TestMethod]
         public void HandlerValid()
         {

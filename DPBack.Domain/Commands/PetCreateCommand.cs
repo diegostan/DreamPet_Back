@@ -8,6 +8,16 @@ namespace DPBack.Domain.Commands
 {
     public class PetCreateCommand : BaseEntity, ICommandBase
     {
+        public PetCreateCommand(){}
+        public PetCreateCommand(Name name, Guid ownerID, ESpecie specie, string breed, EPersonality personality)
+        {
+            Name = name;
+            OwnerID = ownerID;
+            Specie = specie;
+            Breed = breed;
+            Personality = personality;
+        }
+
         public Name Name {get;set;}
         public Guid OwnerID{get;set;}
         public ESpecie Specie{get;set;}   

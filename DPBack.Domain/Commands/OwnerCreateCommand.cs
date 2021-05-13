@@ -9,6 +9,15 @@ namespace DPBack.Domain.Commands
 {
     public class OwnerCreateCommand : BaseEntity, ICommandBase
     {
+        public OwnerCreateCommand(){}
+        public OwnerCreateCommand(Name name, string address, string fone, Document document, DateTime createDate)
+        {
+            Name = name;
+            Address = address;
+            Fone = fone;
+            Document = document;
+            CreateDate = createDate;
+        }
 
         public Name Name{get; set;}
         public string Address {get; set;}
