@@ -13,7 +13,7 @@ namespace DPBack.Domain.Handlers
 
         public OwnerCreateHandler(IOwnerRepository repository)
         {
-            _repository = repository;
+            _repository = repository;         
         }
 
         public ICommandResult Handle(OwnerCreateCommand command)

@@ -2,7 +2,10 @@
 
 namespace DPBack.Domain.Services
 {
-    public class Class1
+    public interface IServices
     {
+            
     }
+    
+    
 }

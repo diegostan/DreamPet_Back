@@ -12,7 +12,7 @@ namespace DPBack.Domain.ValueObjects
     [Owned]
     public class Document
     {
-        
+        //single point entry
         public Document(string documentNumber, EDocumentType documentType)
         {
             DocumentNumber = documentNumber;

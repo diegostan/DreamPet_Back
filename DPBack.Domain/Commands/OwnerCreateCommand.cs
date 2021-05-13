@@ -22,13 +22,15 @@ namespace DPBack.Domain.Commands
 
             if (NameValidations.FirstNameIsNotNull(Name))
                 AddNotifications("Name.FirstName", "O nome não pode ser nulo");
-
+                
+            
             if (NameValidations.LastNameIsNotNull(Name))
                 AddNotifications("Name.LastName", "O sobrenome não pode ser nulo");
             
+
             if (NameValidations.FirstIsLenghtOk(Name, 3, 20))
                 AddNotifications("Name.FirstName", "O nome deve conter entre 3 e 20 caracteres");
-
+                
             if (NameValidations.LastIsLenghtOk(Name, 3, 20))
                 AddNotifications("Name.LastName", "O sobrenome deve conter entre 3 e 20 caracteres");
             

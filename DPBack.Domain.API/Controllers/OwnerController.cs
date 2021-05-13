@@ -17,6 +17,7 @@ namespace DPBack.Domain.API.Controllers
     [Route("/v1/owner")]
     public class OwnerController:ControllerBase
     {
+        
         [AllowAnonymous]        
         [Route("{id:guid}")]
         [HttpGet]

@@ -28,6 +28,7 @@ namespace DPBack.Domain.API
 
             services.AddControllers();
             services.AddMvc();
+            services.AddCors();
             //Cofiguração da base de dados
            // services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("data"));
             services.AddDbContext<DataContext>(opt => 
@@ -53,12 +54,16 @@ namespace DPBack.Domain.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DPBack.Domain.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DPBack.Domain.API v1"));                
             }
 
             app.UseHttpsRedirection();
 
+            
+
             app.UseRouting();
+
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();
 

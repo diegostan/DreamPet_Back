@@ -15,7 +15,7 @@ namespace DPBack.Domain.Test.Handlers
         public void HandlerFail()
         {            
             var command = new PetCreateCommand();
-            command.Name = new ValueObjects.Name(){FirstName="", LastName=""};
+            command.Name = new ValueObjects.Name(firstName:"", lastName:"");
             command.Breed = "";
             
             var handle = new PetCreateHandler(new PetsRepositoryTest());
@@ -29,7 +29,7 @@ namespace DPBack.Domain.Test.Handlers
         public void HandlerValid()
         {            
             var command = new PetCreateCommand();
-            command.Name = new ValueObjects.Name(){FirstName="Mufasa", LastName="Magalhaes"};
+            command.Name = new ValueObjects.Name(firstName:"Mufasa", lastName:"Magalhaes");
             command.Breed = "Husky";
             
             var handle = new PetCreateHandler(new PetsRepositoryTest());

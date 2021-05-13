@@ -16,7 +16,7 @@ namespace DPBack.Domain.Test.Handlers
         public void HandlerFail()
         {
             var command = new OwnerCreateCommand();
-            command.Name = new ValueObjects.Name{FirstName="", LastName=""};           
+            command.Name = new ValueObjects.Name(firstName:"", lastName:"");           
 
             command.Document = new ValueObjects.Document("00000000", Entities.Enums.EDocumentType.CPF);
 
@@ -31,8 +31,8 @@ namespace DPBack.Domain.Test.Handlers
         public void HandlerValid()
         {
             var command = new OwnerCreateCommand();
-            command.Name = new ValueObjects.Name{FirstName="Diego", LastName="Magalhaes"};           
-
+            command.Name = new ValueObjects.Name(firstName:"Diego", lastName:"Magalhaes");           
+            
             command.Document = new ValueObjects.Document("42413399054", Entities.Enums.EDocumentType.CPF);
 
             var handle = new OwnerCreateHandler(new OwnerRepositoryTest());
