@@ -22,6 +22,7 @@
 * A parte de testes unitarios já está implementada
 * As entidades e os modelos de domínio estão desacoplados do Repositorio
 * Repository Patterns, S.O.L.I.D e DDD
+* Nota importante: A ideia para o Dominio é que o mesmo seja CLR(Common Language Runtime) assim não tendo dependencias fora do dotNet 5
 
 ## Sobre a API
 
