@@ -1,5 +1,5 @@
 using System;
-using DPBack.Domain.Entities.Context;
+using DPBack.Domain.Entities.BaseContext;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 

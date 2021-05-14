@@ -1,6 +1,6 @@
-
 using DPBack.Domain.Commands;
-using DPBack.Domain.Handlers;
+using DPBack.Domain.Commands.PetCommands;
+using DPBack.Domain.Handlers.PetHandlers;
 using DPBack.Domain.Test.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

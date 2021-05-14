@@ -1,6 +1,6 @@
 using DPBack.Domain.Commands;
-using DPBack.Domain.Handlers;
-using DPBack.Domain.Repositories;
+using DPBack.Domain.Commands.OwnerCommands;
+using DPBack.Domain.Handlers.OwnerHandlers;
 using DPBack.Domain.Test.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

@@ -1,10 +1,10 @@
 using System;
 using DPBack.Domain.Commands.Interfaces;
-using DPBack.Domain.Entities.Context;
+using DPBack.Domain.Entities.BaseContext;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 
-namespace DPBack.Domain.Commands
+namespace DPBack.Domain.Commands.PetCommands
 {
     public class PetCreateCommand : BaseEntity, ICommandBase
     {

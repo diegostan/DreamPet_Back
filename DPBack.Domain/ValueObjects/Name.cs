@@ -11,7 +11,7 @@ namespace DPBack.Domain.ValueObjects
         //single point entry
         public Name(string firstName, string lastName)
         {
-            FirstName = lastName;
+            FirstName = firstName;
             LastName = lastName;
         }
 

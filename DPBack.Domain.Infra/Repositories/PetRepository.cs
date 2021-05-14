@@ -1,11 +1,9 @@
-using DPBack.Domain.Repositories.Interfaces;
 using DPBack.Domain.Infra.Contexts;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Queries;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
-using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Repositories;
 using System;
 using System.Threading.Tasks;
@@ -33,6 +31,15 @@ namespace DPBack.Domain.Infra.Repositories
             _repositoryContext.Pets.Add(pet);
             _repositoryContext.SaveChanges();
         }
-       
+
+        public void DeleteByPetId(Guid petId)
+        {
+            var pet =  _repositoryContext.Pets.AsNoTracking()
+            .Where(PetsQueries.DeleteByPetId(petId)).FirstOrDefault();
+            if(pet is Pet)
+            _repositoryContext.Pets.Remove(pet);
+            _repositoryContext.SaveChanges();
+             
+        }
     }
 }

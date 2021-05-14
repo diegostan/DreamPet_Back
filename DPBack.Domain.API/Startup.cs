@@ -1,4 +1,5 @@
-using DPBack.Domain.Handlers;
+using DPBack.Domain.Handlers.OwnerHandlers;
+using DPBack.Domain.Handlers.PetHandlers;
 using DPBack.Domain.Infra.Contexts;
 using DPBack.Domain.Infra.Repositories;
 using DPBack.Domain.Repositories;
@@ -40,6 +41,7 @@ namespace DPBack.Domain.API
             services.AddTransient<IPetsRepository, PetRepository>();
             services.AddTransient<OwnerCreateHandler, OwnerCreateHandler>();
             services.AddTransient<PetCreateHandler, PetCreateHandler>();
+            services.AddTransient<PetDeleteHandler, PetDeleteHandler>();
 
             services.AddSwaggerGen(c =>
             {

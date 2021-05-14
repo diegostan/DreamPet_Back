@@ -11,7 +11,6 @@ C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Microsoft.Open
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.csprojAssemblyReference.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.AssemblyInfoInputs.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.AssemblyInfo.cs
@@ -19,7 +18,6 @@ C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.MvcApplicationPartsAssemblyInfo.cs
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.MvcApplicationPartsAssemblyInfo.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\staticwebassets\DPBack.Domain.API.StaticWebAssets.Manifest.cache
-C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\staticwebassets\DPBack.Domain.API.StaticWebAssets.xml
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\scopedcss\bundle\DPBack.Domain.API.styles.css
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.RazorTargetAssemblyInfo.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.csproj.CopyComplete
@@ -64,3 +62,4 @@ C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\runtimes\win-x
 C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.API\obj\Debug\net5.0\DPBack.Domain.API.csproj.AssemblyReference.cache

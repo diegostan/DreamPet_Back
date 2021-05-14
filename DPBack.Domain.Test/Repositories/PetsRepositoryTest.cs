@@ -12,6 +12,12 @@ namespace DPBack.Domain.Test.Repositories
         {
             
         }
+
+        public void DeleteByPetId(Guid petId)
+        {
+            
+        }
+
         public Task<IList<Pet>> GetByOwnerId(Guid ownerid)
         {
             return null;

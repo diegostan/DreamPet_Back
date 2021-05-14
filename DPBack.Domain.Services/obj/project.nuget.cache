@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eH7bnkYNBYQVMYsmRwlqJCKlyb0GHj07SFJJjfKa/Qx+buE/iBnyD5nuyPO+z96+NqxNtihx0RFW5x4Cu0LBmA==",
+  "dgSpecHash": "Tf1PIaZvNWQkwngsljcwm635fzEFm5FkIjukTGOp9hbalzyevd/fd0npb1QZh8ipbOX2WsN6UmHrDIkbkuYiAg==",
   "success": true,
   "projectFilePath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Services\\DPBack.Domain.Services.csproj",
   "expectedPackageFiles": [

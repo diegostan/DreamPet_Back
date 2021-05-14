@@ -1,5 +1,5 @@
 using System;
-using DPBack.Domain.Commands;
+using DPBack.Domain.Commands.OwnerCommands;
 using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -14,7 +14,7 @@ namespace DPBack.Domain.Test.Commands
         //teste de falha do command OwnerCreateCommand
         [TestMethod]
         public void CommandFail()
-        {
+        {                        
             var command = new OwnerCreateCommand(name: new Name(firstName: "", lastName: "")
             , address: "", fone: "", new Document(documentNumber: "", documentType: EDocumentType.CPF)
             , DateTime.Now

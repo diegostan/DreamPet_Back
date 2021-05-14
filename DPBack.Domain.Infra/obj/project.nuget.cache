@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EQ7hpatUJfdkRhPgBxsGdT5ThaVc4QTHQmYhNfgxEg2qLtgL3ZZNnZ1z5cxr6ynOaH6guTvVfaQ2vyMqaCzKOQ==",
+  "dgSpecHash": "lVegUKGoymCwk6mKFyKKHeg73W0H/Wo4cRVLsMFZtOi15mGe4kbFrjEMVdT5auZuhL1lRlAw0XAp79WvTHgMcQ==",
   "success": true,
   "projectFilePath": "C:\\VSCode\\DreamPet\\back\\DPBack\\DPBack.Domain.Infra\\DPBack.Domain.Infra.csproj",
   "expectedPackageFiles": [

@@ -1,11 +1,11 @@
-
 using DPBack.Domain.Commands;
+using DPBack.Domain.Commands.OwnerCommands;
 using DPBack.Domain.Commands.Interfaces;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Handlers.Interfaces;
 using DPBack.Domain.Repositories;
 
-namespace DPBack.Domain.Handlers
+namespace DPBack.Domain.Handlers.OwnerHandlers
 {
     public class OwnerCreateHandler : IHandlerBase<OwnerCreateCommand>
     {

@@ -3,7 +3,7 @@ using DPBack.Domain.Entities.Enums;
 using DPBack.Domain.ValueObjects;
 
 
-namespace DPBack.Domain.Entities.Context
+namespace DPBack.Domain.Entities.BaseContext
 {
     public abstract class BasePet: BaseEntity
     {      

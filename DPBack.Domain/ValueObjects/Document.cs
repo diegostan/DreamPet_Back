@@ -1,9 +1,5 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.RegularExpressions;
-using DPBack.Domain.Entities;
-using DPBack.Domain.Entities.Context;
 using DPBack.Domain.Entities.Enums;
 using Microsoft.EntityFrameworkCore;
 

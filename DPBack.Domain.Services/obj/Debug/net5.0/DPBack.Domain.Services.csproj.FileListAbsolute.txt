@@ -2,7 +2,6 @@ C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\bin\Debug\net5.0\DPBack.Do
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\bin\Debug\net5.0\DPBack.Domain.Services.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\bin\Debug\net5.0\ref\DPBack.Domain.Services.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\bin\Debug\net5.0\DPBack.Domain.Services.pdb
-C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Domain.Services.csprojAssemblyReference.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Domain.Services.AssemblyInfoInputs.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Domain.Services.AssemblyInfo.cs
@@ -13,3 +12,4 @@ C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Do
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\bin\Debug\net5.0\DPBack.Domain.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\bin\Debug\net5.0\DPBack.Domain.pdb
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Domain.Services.csproj.CopyComplete
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Services\obj\Debug\net5.0\DPBack.Domain.Services.csproj.AssemblyReference.cache

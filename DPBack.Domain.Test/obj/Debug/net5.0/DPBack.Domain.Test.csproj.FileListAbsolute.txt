@@ -86,7 +86,6 @@ C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\zh-Hans\Micro
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\obj\Debug\net5.0\DPBack.Domain.Test.csprojAssemblyReference.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\obj\Debug\net5.0\DPBack.Domain.Test.GeneratedMSBuildEditorConfig.editorconfig
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\obj\Debug\net5.0\DPBack.Domain.Test.AssemblyInfoInputs.cache
 C:\VSCode\dreampet\back\DPBack\DPBack.Domain.Test\obj\Debug\net5.0\DPBack.Domain.Test.AssemblyInfo.cs
@@ -109,3 +108,4 @@ C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\Microsoft.Ext
 C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\obj\Debug\net5.0\DPBack.Domain.Test.csproj.AssemblyReference.cache

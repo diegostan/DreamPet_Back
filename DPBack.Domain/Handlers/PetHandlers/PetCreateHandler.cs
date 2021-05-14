@@ -1,11 +1,12 @@
-using DPBack.Domain.Commands;
+using DPBack.Domain.Commands.PetCommands;
 using DPBack.Domain.Commands.Interfaces;
+using DPBack.Domain.Commands;
 using DPBack.Domain.Entities;
 using DPBack.Domain.Handlers.Interfaces;
 using DPBack.Domain.Repositories;
-using DPBack.Domain.ValueObjects;
 
-namespace DPBack.Domain.Handlers
+
+namespace DPBack.Domain.Handlers.PetHandlers
 {
     public class PetCreateHandler:IHandlerBase<PetCreateCommand>
     {
