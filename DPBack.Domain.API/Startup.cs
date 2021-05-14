@@ -36,9 +36,9 @@ namespace DPBack.Domain.API
             opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             
 
-            //Injeção de dependencia
-            services.AddTransient<IOwnerRepository, OwnerRepository>();
-            services.AddTransient<IPetsRepository, PetRepository>();
+            //Inverção de controle com DI(injeção de dependencia)
+            services.AddScoped<IOwnerRepository, OwnerRepository>();
+            services.AddScoped<IPetsRepository, PetRepository>();
             services.AddTransient<OwnerCreateHandler, OwnerCreateHandler>();
             services.AddTransient<PetCreateHandler, PetCreateHandler>();
             services.AddTransient<PetDeleteHandler, PetDeleteHandler>();

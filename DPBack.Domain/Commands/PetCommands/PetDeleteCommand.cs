@@ -9,13 +9,12 @@ namespace DPBack.Domain.Commands.PetCommands
         public Guid PetId{get;set;}
         public bool Validate()
         {
-            if((String.IsNullOrEmpty((this.PetId.ToString()))))
-            {
+            if((String.IsNullOrEmpty((this.PetId.ToString()))))            
                 this.AddNotifications("petId", "Numero do ID inválido");
-                return false;
-            }
+                
+            
 
-            return true;
+            return (this.Notifications.Count ==0)? true:false;
         }
     }
 }

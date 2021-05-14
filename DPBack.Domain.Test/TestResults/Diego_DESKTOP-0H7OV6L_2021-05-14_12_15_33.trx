@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="622f871a-fefa-4d32-96c3-5acc50b42c41" name="Diego@DESKTOP-0H7OV6L 2021-05-14 12:15:33" runUser="DESKTOP-0H7OV6L\Diego" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-05-14T12:15:33.6369742-03:00" queuing="2021-05-14T12:15:33.6369764-03:00" start="2021-05-14T12:15:31.7740915-03:00" finish="2021-05-14T12:15:33.7587490-03:00" />
+  <TestSettings name="default" id="455b1676-44f2-4270-adfe-f6f25c359359">
+    <Deployment runDeploymentRoot="Diego_DESKTOP-0H7OV6L_2021-05-14_12_15_33" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="643a58fd-fc05-490b-924b-061ccfaad7c6" testId="2cb229aa-8769-807c-5766-ca4bc04ec29a" testName="HandlerValid" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0013096" startTime="2021-05-14T12:15:33.4344968-03:00" endTime="2021-05-14T12:15:33.4359799-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="643a58fd-fc05-490b-924b-061ccfaad7c6" />
+    <UnitTestResult executionId="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" testId="63d803f7-7a8c-4fc3-279d-a0e3d3c1eb8e" testName="VerificaDocumentoCNPJ" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0004222" startTime="2021-05-14T12:15:33.2777563-03:00" endTime="2021-05-14T12:15:33.2784654-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" resultType="DataDrivenTest">
+      <InnerResults>
+        <UnitTestResult executionId="4fbfd0a1-2ee6-485b-98a2-df155bb3cca2" parentExecutionId="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" testId="63d803f7-7a8c-4fc3-279d-a0e3d3c1eb8e" testName="VerificaDocumentoCNPJ (49986735000125)" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0002134" startTime="2021-05-14T12:15:33.2777563-03:00" endTime="2021-05-14T12:15:33.2784654-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fbfd0a1-2ee6-485b-98a2-df155bb3cca2" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="f266b988-2f82-4663-9fbc-98d699780075" parentExecutionId="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" testId="63d803f7-7a8c-4fc3-279d-a0e3d3c1eb8e" testName="VerificaDocumentoCNPJ (86676739000133)" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0000095" startTime="2021-05-14T12:15:33.2777563-03:00" endTime="2021-05-14T12:15:33.2784654-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f266b988-2f82-4663-9fbc-98d699780075" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="9db4595b-19d0-4c6d-b73c-30a743c34005" parentExecutionId="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" testId="63d803f7-7a8c-4fc3-279d-a0e3d3c1eb8e" testName="VerificaDocumentoCNPJ (20780936000190)" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0000027" startTime="2021-05-14T12:15:33.2777563-03:00" endTime="2021-05-14T12:15:33.2784654-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9db4595b-19d0-4c6d-b73c-30a743c34005" dataRowInfo="3" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf5a0071-e0ae-43e2-b754-03cd9d8f22f1" testId="be171bf0-c096-a45d-d5d7-994978aa3fd4" testName="CommandFail" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0009513" startTime="2021-05-14T12:15:33.4376463-03:00" endTime="2021-05-14T12:15:33.4389538-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf5a0071-e0ae-43e2-b754-03cd9d8f22f1" />
+    <UnitTestResult executionId="6152ec66-9991-4ca5-83fd-6d36eb032744" testId="9b8e3ddb-9acc-db4a-45fe-1701f7e7f599" testName="QueryFail" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0314866" startTime="2021-05-14T12:15:33.3916304-03:00" endTime="2021-05-14T12:15:33.4235163-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6152ec66-9991-4ca5-83fd-6d36eb032744" />
+    <UnitTestResult executionId="be0d050a-4dd0-44ae-acf9-8beab9bca8e8" testId="e8363f7e-01ef-bc7c-2f6d-994b7e62672b" testName="CommandValidade" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0003551" startTime="2021-05-14T12:15:33.4370674-03:00" endTime="2021-05-14T12:15:33.4375913-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be0d050a-4dd0-44ae-acf9-8beab9bca8e8" />
+    <UnitTestResult executionId="aaf124fb-79df-4556-80d9-a10444c82814" testId="0871ec41-3d73-f5ea-5407-0297fa847365" testName="HandlerValid" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0005908" startTime="2021-05-14T12:15:33.4312662-03:00" endTime="2021-05-14T12:15:33.4322735-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aaf124fb-79df-4556-80d9-a10444c82814" />
+    <UnitTestResult executionId="8c38de85-6a9e-4e0b-8280-e27d432b2646" testId="8e13bb09-05ce-8ab5-84fe-fc5051275af4" testName="VerificaDocumentoCPF" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0257950" startTime="2021-05-14T12:15:33.1540327-03:00" endTime="2021-05-14T12:15:33.2626865-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c38de85-6a9e-4e0b-8280-e27d432b2646" resultType="DataDrivenTest">
+      <InnerResults>
+        <UnitTestResult executionId="f2db258b-10db-446b-827e-632e212900ed" parentExecutionId="8c38de85-6a9e-4e0b-8280-e27d432b2646" testId="8e13bb09-05ce-8ab5-84fe-fc5051275af4" testName="VerificaDocumentoCPF (35724768011)" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0071575" startTime="2021-05-14T12:15:33.1540327-03:00" endTime="2021-05-14T12:15:33.2626865-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2db258b-10db-446b-827e-632e212900ed" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="3d0385f0-e25b-4e78-a653-da7be5d355c6" parentExecutionId="8c38de85-6a9e-4e0b-8280-e27d432b2646" testId="8e13bb09-05ce-8ab5-84fe-fc5051275af4" testName="VerificaDocumentoCPF (42413399054)" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0000378" startTime="2021-05-14T12:15:33.1540327-03:00" endTime="2021-05-14T12:15:33.2626865-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d0385f0-e25b-4e78-a653-da7be5d355c6" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="33d459c8-e383-48eb-9ac4-ac2b69996962" parentExecutionId="8c38de85-6a9e-4e0b-8280-e27d432b2646" testId="8e13bb09-05ce-8ab5-84fe-fc5051275af4" testName="VerificaDocumentoCPF (05601585059)" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0000047" startTime="2021-05-14T12:15:33.1540327-03:00" endTime="2021-05-14T12:15:33.2626865-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33d459c8-e383-48eb-9ac4-ac2b69996962" dataRowInfo="3" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="99dfd56e-3545-44a0-98a6-482751002ff3" testId="104dbdee-714f-f897-4f95-61a6274b1f5c" testName="HandlerFail" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0017655" startTime="2021-05-14T12:15:33.4323374-03:00" endTime="2021-05-14T12:15:33.4344116-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99dfd56e-3545-44a0-98a6-482751002ff3" />
+    <UnitTestResult executionId="77a7b7c6-7aa4-49cd-985d-a62bd858f5d1" testId="ab72ee3e-5f4a-5d41-6967-c8732988adaa" testName="HandlerFail" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0046111" startTime="2021-05-14T12:15:33.4260802-03:00" endTime="2021-05-14T12:15:33.4311372-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77a7b7c6-7aa4-49cd-985d-a62bd858f5d1" />
+    <UnitTestResult executionId="dd2ab5f7-84bc-49cf-a968-d4f175fc362e" testId="1f58e17c-c6ac-62c5-97dd-06173522b0a6" testName="CommandFail" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0006260" startTime="2021-05-14T12:15:33.4360415-03:00" endTime="2021-05-14T12:15:33.4370069-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd2ab5f7-84bc-49cf-a968-d4f175fc362e" />
+    <UnitTestResult executionId="403e7e37-f0b5-426d-87b2-ab4df434d863" testId="1bcd6873-4dca-2d38-41cb-000762c18c51" testName="QuerySucess" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0021941" startTime="2021-05-14T12:15:33.4236324-03:00" endTime="2021-05-14T12:15:33.4260126-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="403e7e37-f0b5-426d-87b2-ab4df434d863" />
+    <UnitTestResult executionId="612a0691-c3f7-49bf-a83f-5bd9a5841c5e" testId="ce1e083e-133d-65f8-023c-261097c05c53" testName="CommandValidate" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0003374" startTime="2021-05-14T12:15:33.4482015-03:00" endTime="2021-05-14T12:15:33.4489050-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="612a0691-c3f7-49bf-a83f-5bd9a5841c5e" />
+    <UnitTestResult executionId="5637f635-975a-4a4e-808a-b39727bf9625" testId="c60e4172-c821-2561-3b11-b926ecfefba4" testName="VerificaNome" computerName="DESKTOP-0H7OV6L" duration="00:00:00.0001894" startTime="2021-05-14T12:15:33.2785716-03:00" endTime="2021-05-14T12:15:33.2790765-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5637f635-975a-4a4e-808a-b39727bf9625" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="HandlerFail" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="104dbdee-714f-f897-4f95-61a6274b1f5c">
+      <Execution id="99dfd56e-3545-44a0-98a6-482751002ff3" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Handlers.PetCreateHandlerTest" name="HandlerFail" />
+    </UnitTest>
+    <UnitTest name="HandlerValid" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="0871ec41-3d73-f5ea-5407-0297fa847365">
+      <Execution id="aaf124fb-79df-4556-80d9-a10444c82814" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Handlers.OwnerCreateHandlerTest" name="HandlerValid" />
+    </UnitTest>
+    <UnitTest name="CommandValidate" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="ce1e083e-133d-65f8-023c-261097c05c53">
+      <Execution id="612a0691-c3f7-49bf-a83f-5bd9a5841c5e" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Commands.PetCreateCommandTest" name="CommandValidate" />
+    </UnitTest>
+    <UnitTest name="CommandFail" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="be171bf0-c096-a45d-d5d7-994978aa3fd4">
+      <Execution id="bf5a0071-e0ae-43e2-b754-03cd9d8f22f1" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Commands.PetCreateCommandTest" name="CommandFail" />
+    </UnitTest>
+    <UnitTest name="CommandValidade" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="e8363f7e-01ef-bc7c-2f6d-994b7e62672b">
+      <Execution id="be0d050a-4dd0-44ae-acf9-8beab9bca8e8" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Commands.OwnerCreateCommandTest" name="CommandValidade" />
+    </UnitTest>
+    <UnitTest name="QueryFail" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="9b8e3ddb-9acc-db4a-45fe-1701f7e7f599">
+      <Execution id="6152ec66-9991-4ca5-83fd-6d36eb032744" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Queries.OwnerQueriesTest" name="QueryFail" />
+    </UnitTest>
+    <UnitTest name="QuerySucess" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="1bcd6873-4dca-2d38-41cb-000762c18c51">
+      <Execution id="403e7e37-f0b5-426d-87b2-ab4df434d863" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Queries.OwnerQueriesTest" name="QuerySucess" />
+    </UnitTest>
+    <UnitTest name="CommandFail" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="1f58e17c-c6ac-62c5-97dd-06173522b0a6">
+      <Execution id="dd2ab5f7-84bc-49cf-a968-d4f175fc362e" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Commands.OwnerCreateCommandTest" name="CommandFail" />
+    </UnitTest>
+    <UnitTest name="VerificaNome" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="c60e4172-c821-2561-3b11-b926ecfefba4">
+      <Execution id="5637f635-975a-4a4e-808a-b39727bf9625" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.NameTest" name="VerificaNome" />
+    </UnitTest>
+    <UnitTest name="HandlerValid" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="2cb229aa-8769-807c-5766-ca4bc04ec29a">
+      <Execution id="643a58fd-fc05-490b-924b-061ccfaad7c6" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Handlers.PetCreateHandlerTest" name="HandlerValid" />
+    </UnitTest>
+    <UnitTest name="HandlerFail" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="ab72ee3e-5f4a-5d41-6967-c8732988adaa">
+      <Execution id="77a7b7c6-7aa4-49cd-985d-a62bd858f5d1" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.Test.Handlers.OwnerCreateHandlerTest" name="HandlerFail" />
+    </UnitTest>
+    <UnitTest name="VerificaDocumentoCPF" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="8e13bb09-05ce-8ab5-84fe-fc5051275af4">
+      <Execution id="8c38de85-6a9e-4e0b-8280-e27d432b2646" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.DocumentTest" name="VerificaDocumentoCPF" />
+    </UnitTest>
+    <UnitTest name="VerificaDocumentoCNPJ" storage="c:\vscode\dreampet\back\dpback\dpback.domain.test\bin\debug\net5.0\dpback.domain.test.dll" id="63d803f7-7a8c-4fc3-279d-a0e3d3c1eb8e">
+      <Execution id="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" />
+      <TestMethod codeBase="C:\VSCode\DreamPet\back\DPBack\DPBack.Domain.Test\bin\Debug\net5.0\DPBack.Domain.Test.dll" adapterTypeName="executor://mstestadapter/v2" className="DPBack.Domain.DocumentTest" name="VerificaDocumentoCNPJ" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="2cb229aa-8769-807c-5766-ca4bc04ec29a" executionId="643a58fd-fc05-490b-924b-061ccfaad7c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63d803f7-7a8c-4fc3-279d-a0e3d3c1eb8e" executionId="a167ca4a-22e7-4e00-ad8e-1fc64b1b3fa6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be171bf0-c096-a45d-d5d7-994978aa3fd4" executionId="bf5a0071-e0ae-43e2-b754-03cd9d8f22f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b8e3ddb-9acc-db4a-45fe-1701f7e7f599" executionId="6152ec66-9991-4ca5-83fd-6d36eb032744" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8363f7e-01ef-bc7c-2f6d-994b7e62672b" executionId="be0d050a-4dd0-44ae-acf9-8beab9bca8e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0871ec41-3d73-f5ea-5407-0297fa847365" executionId="aaf124fb-79df-4556-80d9-a10444c82814" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e13bb09-05ce-8ab5-84fe-fc5051275af4" executionId="8c38de85-6a9e-4e0b-8280-e27d432b2646" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="104dbdee-714f-f897-4f95-61a6274b1f5c" executionId="99dfd56e-3545-44a0-98a6-482751002ff3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab72ee3e-5f4a-5d41-6967-c8732988adaa" executionId="77a7b7c6-7aa4-49cd-985d-a62bd858f5d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f58e17c-c6ac-62c5-97dd-06173522b0a6" executionId="dd2ab5f7-84bc-49cf-a968-d4f175fc362e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bcd6873-4dca-2d38-41cb-000762c18c51" executionId="403e7e37-f0b5-426d-87b2-ab4df434d863" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce1e083e-133d-65f8-023c-261097c05c53" executionId="612a0691-c3f7-49bf-a83f-5bd9a5841c5e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c60e4172-c821-2561-3b11-b926ecfefba4" executionId="5637f635-975a-4a4e-808a-b39727bf9625" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="19" executed="19" passed="19" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
