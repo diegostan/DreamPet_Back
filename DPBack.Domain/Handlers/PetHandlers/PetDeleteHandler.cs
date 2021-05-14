@@ -20,11 +20,11 @@ namespace DPBack.Domain.Handlers.PetHandlers
         public ICommandResult Handle(PetDeleteCommand command)
         {
             if (!command.Validate())
-                return new CommandResult(false, "PetDeleteCommand", "Não foi possível remover o pet");
+                return new CommandResult(false, "PetDeleteCommand", "Não foi possível remover o pet", null);
             
             
                 _repository.DeleteByPetId(command.PetId);
-                return new CommandResult(true, "PetDeleteCommand", "Pet removido com sucesso");
+                return new CommandResult(true, "PetDeleteCommand", "Pet removido com sucesso", null);
             
         }
 
